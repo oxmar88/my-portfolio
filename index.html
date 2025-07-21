@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal blog / webspace</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+
+<body>
+
+    <h1><img src="z.png.png" height="290" class="logo" /></h1> 
+    <!-- where i got my logo : https://pngtree.com/freepng/letter-z-logo-design-vector-png_6953553.html -->
+
+    <div id="search-posts">
+        <input type="text" id="search-input" placeholder="Search posts..." />
+     </div>
+
+<main>
+
+    <!-- i turned this into a form instead to make it easier to process for me  -->
+    <form id="create-post-form"> 
+      <input type="text" id="username" placeholder="Username (optional)" />
+      <textarea id="post-text" placeholder="Tell the Z world..." required></textarea>
+      <button type="submit">Post</button> <!-- Change button to type submit -->
+    </form>
+
+
+
+    <div id="display-posts"></div>
+
+</main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+  <footer>
+    <P><strong>&copy; 2025 Omar Elsayed. All rights reserved.</strong></P>
+  </footer>
+
+
+
+</html>
