@@ -1,0 +1,140 @@
+body {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+
+.logo {
+    display: block; 
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  
+ /* for the search bar  */
+#search-posts {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+#search-posts input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+main {
+    display: flex;
+    gap: 20px; 
+  }
+  
+#create-post-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #aaa;
+    padding: 20px;
+    width: 50%;
+    gap: 10px;
+    background-color: white;
+  }
+  
+#create-post-form input, #create-post-form textarea {
+    padding: 10px;
+    border: 1px solid #ff3b3b;
+    border-radius: 4px;
+  }
+  
+#create-post-form button {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #333;
+    color:white ;
+  }
+
+
+
+/* posts css */
+#display-posts {
+    flex: 2;
+    border: 1px solid #aaa;
+    padding: 20px;
+    max-width: 50%;
+    background-color:white;
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 15px ;
+}
+  
+.post-header {
+    font-size:20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+  
+.post-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+  
+.post-replies {
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid #ccc; /* to make it look like a litte reply bar */
+}
+  
+.reply {
+    margin-bottom: 10px;
+    color: #444;
+}
+  
+  
+
+/* footer */
+footer {
+    margin-top: 230px;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #aaa;
+    color: #777;
+}
+
+
+
+/* for the phone display */
+@media (max-width: 840px) {
+   
+    .logo {
+      width: auto;
+      margin-bottom: 15px;
+    }
+  
+    #search-posts input {
+      width: 100%;
+      font-size: 80%;
+    }
+  
+    main {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #create-post-form, #display-posts {
+      width: 96%;
+      font-size: 80%;
+      max-width: 96%; /* to overide the previously set 50% in the laptop settings */
+      margin-right: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 80%;
+    }
+
+  }
+  
